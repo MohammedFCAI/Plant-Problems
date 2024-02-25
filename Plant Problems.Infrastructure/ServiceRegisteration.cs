@@ -83,6 +83,7 @@ namespace Plant_Problems.Infrastructure
 				option.AddSecurityRequirement(new OpenApiSecurityRequirement
 				{
 					{
+						//add securiyty
 						new OpenApiSecurityScheme
 						{
 							Reference = new OpenApiReference

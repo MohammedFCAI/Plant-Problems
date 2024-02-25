@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "Plant Problems.Infrastructure\\ServiceRegisteration.cs",
               "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Infrastructure\\ServiceRegisteration.cs",
               "RelativeToolTip": "Plant Problems.Infrastructure\\ServiceRegisteration.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAF8AAAAHAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFAAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T00:57:15.281Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "Plant Problems.Service\\Implementations\\PostService.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAcwHgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T23:03:04.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T23:03:04.288Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "Plant Problems.Core\\Features\\Posts\\Queries\\Handlers\\PostHandlerQuery.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAywDYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T23:02:51.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T23:02:51.104Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "Plant Problems.Service\\Authentications\\Implementations\\UserService.cs",
               "ViewState": "AQIAAFwAAAAAAAAAAAAywHEAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T23:01:44.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T23:01:44.393Z"
             }
           ]
         }
