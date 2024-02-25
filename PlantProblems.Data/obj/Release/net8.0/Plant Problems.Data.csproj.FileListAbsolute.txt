@@ -1,0 +1,12 @@
+E:\Testing\C#\Plant Problems\PlantProblems.Data\bin\Release\net8.0\Plant Problems.Data.deps.json
+E:\Testing\C#\Plant Problems\PlantProblems.Data\bin\Release\net8.0\Plant Problems.Data.dll
+E:\Testing\C#\Plant Problems\PlantProblems.Data\bin\Release\net8.0\Plant Problems.Data.pdb
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\Plant Problems.Data.csproj.AssemblyReference.cache
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\Plant Problems.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\Plant Problems.Data.AssemblyInfoInputs.cache
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\Plant Problems.Data.AssemblyInfo.cs
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\Plant Problems.Data.csproj.CoreCompileInputs.cache
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\Plant Problems.Data.dll
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\refint\Plant Problems.Data.dll
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\Plant Problems.Data.pdb
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Release\net8.0\ref\Plant Problems.Data.dll

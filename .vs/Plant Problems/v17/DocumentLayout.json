@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Testing\\C#\\Plant Problems\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8CA13EC-89E3-47CB-99A5-00AB5241EDA9}|Plant Problems.Infrastructure\\Plant Problems.Infrastructure.csproj|e:\\testing\\c#\\plant problems\\plant problems.infrastructure\\serviceregisteration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8CA13EC-89E3-47CB-99A5-00AB5241EDA9}|Plant Problems.Infrastructure\\Plant Problems.Infrastructure.csproj|solutionrelative:plant problems.infrastructure\\serviceregisteration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E60C92BC-FA9B-432A-9EF6-4F8A2F0182DD}|Plant Problems.Service\\Plant Problems.Service.csproj|e:\\testing\\c#\\plant problems\\plant problems.service\\authentications\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E60C92BC-FA9B-432A-9EF6-4F8A2F0182DD}|Plant Problems.Service\\Plant Problems.Service.csproj|solutionrelative:plant problems.service\\authentications\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70853DD9-ECCE-430F-BC4E-AAA880E234AB}|Plant Problems.Core\\Plant Problems.Core.csproj|e:\\testing\\c#\\plant problems\\plant problems.core\\features\\posts\\queries\\handlers\\posthandlerquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70853DD9-ECCE-430F-BC4E-AAA880E234AB}|Plant Problems.Core\\Plant Problems.Core.csproj|solutionrelative:plant problems.core\\features\\posts\\queries\\handlers\\posthandlerquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E60C92BC-FA9B-432A-9EF6-4F8A2F0182DD}|Plant Problems.Service\\Plant Problems.Service.csproj|e:\\testing\\c#\\plant problems\\plant problems.service\\implementations\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E60C92BC-FA9B-432A-9EF6-4F8A2F0182DD}|Plant Problems.Service\\Plant Problems.Service.csproj|solutionrelative:plant problems.service\\implementations\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceRegisteration.cs",
+              "DocumentMoniker": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Infrastructure\\ServiceRegisteration.cs",
+              "RelativeDocumentMoniker": "Plant Problems.Infrastructure\\ServiceRegisteration.cs",
+              "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Infrastructure\\ServiceRegisteration.cs",
+              "RelativeToolTip": "Plant Problems.Infrastructure\\ServiceRegisteration.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAF8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T00:57:15.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Service\\Implementations\\PostService.cs",
+              "RelativeDocumentMoniker": "Plant Problems.Service\\Implementations\\PostService.cs",
+              "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Service\\Implementations\\PostService.cs",
+              "RelativeToolTip": "Plant Problems.Service\\Implementations\\PostService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAcwHgAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T23:03:04.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostHandlerQuery.cs",
+              "DocumentMoniker": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Core\\Features\\Posts\\Queries\\Handlers\\PostHandlerQuery.cs",
+              "RelativeDocumentMoniker": "Plant Problems.Core\\Features\\Posts\\Queries\\Handlers\\PostHandlerQuery.cs",
+              "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Core\\Features\\Posts\\Queries\\Handlers\\PostHandlerQuery.cs",
+              "RelativeToolTip": "Plant Problems.Core\\Features\\Posts\\Queries\\Handlers\\PostHandlerQuery.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAywDYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T23:02:51.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Service\\Authentications\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "Plant Problems.Service\\Authentications\\Implementations\\UserService.cs",
+              "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Service\\Authentications\\Implementations\\UserService.cs",
+              "RelativeToolTip": "Plant Problems.Service\\Authentications\\Implementations\\UserService.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAywHEAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T23:01:44.393Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
