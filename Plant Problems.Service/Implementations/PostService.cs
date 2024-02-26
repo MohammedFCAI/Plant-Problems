@@ -20,34 +20,83 @@ namespace Plant_Problems.Service.Implementations
 
 		public async Task<ServiceResponse<Post>> AddPost(Post post)
 		{
-			try
+			if (post.Image == null)
 			{
 
-				// Save the image to the server
-				string imagePath = await SaveImage(post.Image, _hostEnvironment);
-
-				// Update the ImageUrl property with the path where the image is stored
-				post.ImageUrl = imagePath;
+				post.ImageUrl = null;
 				post.CreatedOn = DateTime.Now;
-
-				// Save the post to the database
 				await _unitOfWork.PostRepository.AddAsync(post);
 
-				// Return a success response with the updated post
 				return new ServiceResponse<Post>() { Entities = post, Success = true, Message = "Post added successfully" };
 			}
-			catch (Exception ex)
-			{
-				// Handle any exceptions that might occur during the process
-				return new ServiceResponse<Post>() { Entities = null, Success = false, Message = $"Error adding post: {ex.Message}" };
-			}
+			else
+				try
+				{
+
+					// Save the image to the server
+					string imagePath = await SaveImage(post.Image, _hostEnvironment);
+
+					// Update the ImageUrl property with the path where the image is stored
+					post.ImageUrl = imagePath;
+					post.CreatedOn = DateTime.Now;
+
+					// Save the post to the database
+					await _unitOfWork.PostRepository.AddAsync(post);
+
+					// Return a success response with the updated post
+					return new ServiceResponse<Post>() { Entities = post, Success = true, Message = "Post added successfully" };
+				}
+				catch (Exception ex)
+				{
+					// Handle any exceptions that might occur during the process
+					return new ServiceResponse<Post>() { Entities = null, Success = false, Message = $"Error adding post: {ex.Message}" };
+				}
 		}
 
-		public async Task<ServiceResponse<Post>> DeletePost(Post post)
+
+
+		public async Task<ServiceResponse<Post>> UpdatePost(Post entity)
 		{
-			await _unitOfWork.PostRepository.DeleteAsnc(post);
-			return new ServiceResponse<Post>() { Entities = post, Success = true, Message = "Post Deleted Successfully" };
+			var post = await _unitOfWork.PostRepository.GetByIdAsync(entity.ID);
+
+			if (post == null)
+				return new ServiceResponse<Post>() { Entities = null, Success = false, Message = "Post Id not found!" };
+			await DeleteImage(post.ImageUrl, _hostEnvironment);
+
+			if (entity.Image != null)
+			{
+				try
+				{
+					// Save the image to the server
+					string imagePath = await SaveImage(entity.Image, _hostEnvironment);
+
+					// Update the ImageUrl property with the path where the image is stored
+					entity.ImageUrl = imagePath;
+					entity.CreatedOn = post.CreatedOn;
+					entity.LastUpdatedOn = DateTime.Now;
+
+					_unitOfWork.PostRepository.UpdatAsync(entity);
+
+					return new ServiceResponse<Post>() { Entities = entity, Success = true, Message = "Post Updated successfully" };
+				}
+				catch (Exception ex)
+				{
+					return new ServiceResponse<Post>() { Entities = null, Success = false, Message = $"Error adding post: {ex.Message}" };
+				}
+			}
+
+
+			//  if user doesn't want to upload imge
+			entity.ImageUrl = null;
+			entity.CreatedOn = post.CreatedOn;
+			entity.LastUpdatedOn = DateTime.Now;
+
+			_unitOfWork.PostRepository.UpdatAsync(entity);
+			return new ServiceResponse<Post>() { Entities = entity, Success = true, Message = "Post updated." };
 		}
+
+
+
 
 		public async Task<ServiceResponse<Post>> DeletePost(Guid postId)
 		{

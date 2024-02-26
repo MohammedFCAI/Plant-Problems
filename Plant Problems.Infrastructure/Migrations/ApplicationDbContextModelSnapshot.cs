@@ -239,7 +239,7 @@ namespace Plant_Problems.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("LastUpdatedOn")
+                    b.Property<DateTime?>("LastUpdatedOn")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("PostId")
@@ -272,14 +272,12 @@ namespace Plant_Problems.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<byte[]>("Image")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("LastUpdatedOn")
+                    b.Property<DateTime?>("LastUpdatedOn")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")

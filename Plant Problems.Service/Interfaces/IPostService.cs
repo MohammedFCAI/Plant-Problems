@@ -7,10 +7,9 @@ namespace Plant_Problems.Service.Interfaces
 		Task<ServiceResponse<List<Post>>> GetPostsList();
 		Task<ServiceResponse<Post>> GetPostById(Guid postId);
 		Task<ServiceResponse<Post>> AddPost(Post post);
-		Task<ServiceResponse<Post>> SearchByContent(string content);
-		ServiceResponse<IEnumerable<Post>> SearchPosts(string content);
 		Task<ServiceResponse<Post>> DeletePost(Guid postId);
-		Task<ServiceResponse<Post>> DeletePost(Post Post);
+		Task<ServiceResponse<Post>> UpdatePost(Post entity);
+		ServiceResponse<IEnumerable<Post>> SearchPosts(string content);
 		public void Dett(Post post);
 		int GetNumberOfPosts();
 

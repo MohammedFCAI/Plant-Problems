@@ -38,6 +38,13 @@ namespace Plant_Problems.API.Controllers
 			return NewResult(response);
 		}
 
+		[HttpPut]
+		public async Task<IActionResult> UpdatePost([FromForm] UpdatePostRequestCommand request)
+		{
+			var response = await _mediator.Send(request);
+			return NewResult(response);
+		}
+
 		[HttpGet("search/{content}")]
 		public async Task<IActionResult> Search(string content)
 		{

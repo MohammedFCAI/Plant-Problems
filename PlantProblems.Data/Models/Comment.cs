@@ -10,7 +10,7 @@ namespace Plant_Problems.Data.Models
 		public string Content { get; set; }
 
 		public DateTime CreatedOn { get; set; }
-		public DateTime LastUpdatedOn { get; set; }
+		public DateTime? LastUpdatedOn { get; set; }
 
 		public Guid PostId { get; set; }
 

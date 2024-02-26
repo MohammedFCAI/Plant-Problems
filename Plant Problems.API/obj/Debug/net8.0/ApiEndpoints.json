@@ -330,6 +330,37 @@
   },
   {
     "ContainingType": "Plant_Problems.API.Controllers.PostsController",
+    "Method": "UpdatePost",
+    "RelativePath": "api/posts",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Plant_Problems.API.Controllers.PostsController",
     "Method": "GetPostById",
     "RelativePath": "api/posts/{id}",
     "HttpMethod": "GET",
