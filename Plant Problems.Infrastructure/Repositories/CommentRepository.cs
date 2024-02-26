@@ -33,5 +33,14 @@ namespace Plant_Problems.Infrastructure.Repositories
 				.FirstOrDefault(c => c.ID == commentId);
 		}
 
+		public override async Task DeleteRangeAsync(ICollection<Comment> entities)
+		{
+			foreach (var entity in entities)
+			{
+				_context.Entry(entity).State = EntityState.Deleted;
+			}
+			await _context.SaveChangesAsync();
+		}
+
 	}
 }

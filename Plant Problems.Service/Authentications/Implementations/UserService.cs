@@ -73,7 +73,6 @@ namespace Plant_Problems.Service.Authentications.Implementations
 				UserName = model.Username,
 				Email = model.Email,
 				SecurityStamp = Guid.NewGuid().ToString(),
-				RefreshToken = "sterdfdodfu fafdifafdda24fdd",
 			};
 
 			if (model.Password != model.ConfirmPassword)
@@ -259,11 +258,11 @@ namespace Plant_Problems.Service.Authentications.Implementations
 		private JwtSecurityToken GetToken(List<Claim> userClaim)
 		{
 			var authSignKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Key"]));
-			_ = int.TryParse(_configuration["JWT:TokenValidityInMinutes"], out int tokenValidityInMinutes);
+			_ = int.TryParse(_configuration["JWT:TokenValidityInDays"], out int tokenValidityInDays);
 			var token = new JwtSecurityToken(
 				issuer: _configuration["JWT:Issuer"],
 				audience: _configuration["JWT:Audience"],
-				expires: DateTime.Now.AddMinutes(tokenValidityInMinutes),
+				expires: DateTime.Now.AddMinutes(tokenValidityInDays),
 				claims: userClaim,
 				signingCredentials: new SigningCredentials(authSignKey, SecurityAlgorithms.HmacSha256)
 				);
@@ -313,7 +312,7 @@ namespace Plant_Problems.Service.Authentications.Implementations
 					RefreshToken = new JwtToken()
 					{
 						Token = user.RefreshToken,
-						ExpireTokenDate = user.RefreshTokenExpire
+						ExpireTokenDate = (DateTime)user.RefreshTokenExpire
 					}
 				},
 				Success = true,

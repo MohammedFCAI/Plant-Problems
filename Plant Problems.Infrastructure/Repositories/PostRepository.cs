@@ -24,6 +24,7 @@ namespace Plant_Problems.Infrastructure.Repositories
 		public IEnumerable<Post> Search(string content)
 		{
 			return _posts
+			.Include(c => c.Comments)
 			.AsEnumerable()
 			.Where(p => p.Content.Contains(content, StringComparison.OrdinalIgnoreCase))
 			.ToList();
@@ -54,18 +55,13 @@ namespace Plant_Problems.Infrastructure.Repositories
 		public void Detach(Post post)
 		{
 			if (_context.Entry(post.User).State == EntityState.Detached)
-			{
 				_context.Entry(post.User).State = EntityState.Detached;
-
-				//_context.Attach(post.User);
-
-			}
-
 		}
 
 		public async Task<List<Post>> GetPostsListByUserId(string userId)
 		{
 			var posts = await _context.Posts
+				.Include(c => c.Comments)
 				.Where(sp => sp.UserId == userId)
 				.ToListAsync();
 

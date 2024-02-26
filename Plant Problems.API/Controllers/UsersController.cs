@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Plant_Problems.API.Bases;
 using Plant_Problems.Core.Features.Users.Commands.Requests;
@@ -9,7 +8,6 @@ namespace Plant_Problems.API.Controllers
 {
 	[Route("api/users")]
 	[ApiController]
-	[Authorize]
 	public class UsersController : AppControllerBase
 	{
 		private readonly IMediator _mediator;

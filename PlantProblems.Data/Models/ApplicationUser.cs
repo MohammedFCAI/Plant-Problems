@@ -13,7 +13,7 @@ namespace Plant_Problems.Data.Models
 		[JsonIgnore]
 		public List<Comment> Comments { get; set; }
 
-		public string RefreshToken { get; set; }
-		public DateTime RefreshTokenExpire { get; set; }
+		public string? RefreshToken { get; set; }
+		public DateTime? RefreshTokenExpire { get; set; }
 	}
 }

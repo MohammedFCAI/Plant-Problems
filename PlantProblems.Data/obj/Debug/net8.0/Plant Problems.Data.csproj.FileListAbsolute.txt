@@ -10,3 +10,4 @@ E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Debug\net8.0\Plant Problems.
 E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Debug\net8.0\refint\Plant Problems.Data.dll
 E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Debug\net8.0\Plant Problems.Data.pdb
 E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Debug\net8.0\ref\Plant Problems.Data.dll
+E:\Testing\C#\Plant Problems\PlantProblems.Data\obj\Debug\net8.0\Plant Problems.Data.sourcelink.json

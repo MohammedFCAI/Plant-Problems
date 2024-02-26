@@ -40,7 +40,7 @@ namespace Plant_Problems.API.Controllers
 				var token = await _userManager.GenerateEmailConfirmationTokenAsync(appUser);
 				var confirmationLink = Url.Action(nameof(ConfirmEmail), "Authentications", new { token, email = user.Email }, Request.Scheme);
 
-				var message = new Message(appUser.Email!, "confirmation email Link", confirmationLink!);
+				var message = new Message(appUser.Email!, "confirmation email Link", $"Please confirm your email. Click on this link to confirm your email.\n{confirmationLink!}");
 				try
 				{
 					await _emailService.SendEmailAsync(message);

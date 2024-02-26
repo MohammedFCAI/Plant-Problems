@@ -12,8 +12,8 @@ using Plant_Problems.Infrastructure;
 namespace Plant_Problems.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240224223349_AddTables")]
-    partial class AddTables
+    [Migration("20240226174039_AddEntities")]
+    partial class AddEntities
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -201,10 +201,9 @@ namespace Plant_Problems.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("RefreshToken")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("RefreshTokenExpire")
+                    b.Property<DateTime?>("RefreshTokenExpire")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")

@@ -5,7 +5,7 @@
 namespace Plant_Problems.Infrastructure.Migrations
 {
 	/// <inheritdoc />
-	public partial class AddTables : Migration
+	public partial class AddEntities : Migration
 	{
 		/// <inheritdoc />
 		protected override void Up(MigrationBuilder migrationBuilder)
@@ -29,8 +29,8 @@ namespace Plant_Problems.Infrastructure.Migrations
 				columns: table => new
 				{
 					Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-					RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: false),
-					RefreshTokenExpire = table.Column<DateTime>(type: "datetime2", nullable: false),
+					RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
+					RefreshTokenExpire = table.Column<DateTime>(type: "datetime2", nullable: true),
 					UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
 					NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
 					Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -199,12 +199,13 @@ namespace Plant_Problems.Infrastructure.Migrations
 						column: x => x.UserId,
 						principalTable: "AspNetUsers",
 						principalColumn: "Id",
-						onDelete: ReferentialAction.Cascade);
+						onDelete: ReferentialAction.Restrict);
 					table.ForeignKey(
 						name: "FK_Comments_Posts_PostId",
 						column: x => x.PostId,
 						principalTable: "Posts",
-						principalColumn: "ID");
+						principalColumn: "ID",
+						onDelete: ReferentialAction.Cascade);
 				});
 
 			migrationBuilder.CreateTable(
@@ -223,12 +224,13 @@ namespace Plant_Problems.Infrastructure.Migrations
 						column: x => x.UserId,
 						principalTable: "AspNetUsers",
 						principalColumn: "Id",
-						onDelete: ReferentialAction.Cascade);
+						onDelete: ReferentialAction.Restrict);
 					table.ForeignKey(
 						name: "FK_SavedPosts_Posts_PostId",
 						column: x => x.PostId,
 						principalTable: "Posts",
-						principalColumn: "ID");
+						principalColumn: "ID",
+						onDelete: ReferentialAction.Cascade);
 				});
 
 			migrationBuilder.CreateIndex(

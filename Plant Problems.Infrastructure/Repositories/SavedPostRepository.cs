@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Plant_Problems.Data.Models;
+using Plant_Problems.Infrastructure.Bases;
 using Plant_Problems.Infrastructure.Interfaces;
 
 namespace Plant_Problems.Infrastructure.Repositories
 {
-	public class SavedPostRepository : ISavedPostRepository
+	public class SavedPostRepository : GenericRepository<SavedPost>, ISavedPostRepository
 	{
 		private readonly UserManager<ApplicationUser> _userManager;
 		private readonly ApplicationDbContext _context;
-		public SavedPostRepository(UserManager<ApplicationUser> userManager, ApplicationDbContext context)
+		public SavedPostRepository(UserManager<ApplicationUser> userManager, ApplicationDbContext context) : base(context)
 		{
 			_userManager = userManager;
 			_context = context;
@@ -23,6 +24,7 @@ namespace Plant_Problems.Infrastructure.Repositories
 				.ToListAsync();
 
 			List<Post> savedPosts = await _context.Posts
+				.Include(c => c.Comments)
 				.Where(p => savedPostIds.Contains(p.ID))
 				.ToListAsync();
 
@@ -51,6 +53,16 @@ namespace Plant_Problems.Infrastructure.Repositories
 			}
 
 			return false; // Post was not saved by the user
+		}
+
+
+		public async Task DeleteRangeAsync(ICollection<Post> entities)
+		{
+			foreach (var entity in entities)
+			{
+				_context.Entry(entity).State = EntityState.Deleted;
+			}
+			await _context.SaveChangesAsync();
 		}
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Plant_Problems.Data.Models;
 using Plant_Problems.Infrastructure.Interfaces;
 using Plant_Problems.Service.Interfaces;
@@ -50,11 +51,11 @@ namespace Plant_Problems.Service.Implementations
 
 		public async Task<ServiceResponse<Post>> DeletePost(Guid postId)
 		{
-			var postResponse = await GetPostById(postId);
-			var post = postResponse.Entities;
+			var post = await _unitOfWork.PostRepository.GetByIdAsync(postId, i => i.Include(c => c.User));
 
 			if (post == null)
 				return new ServiceResponse<Post>() { Entities = null, Success = false, Message = "Post Id not found!" };
+
 
 			await _unitOfWork.PostRepository.DeleteAsnc(post);
 			await DeleteImage(post.ImageUrl, _hostEnvironment);
@@ -80,7 +81,10 @@ namespace Plant_Problems.Service.Implementations
 		{
 			var posts = await _unitOfWork.PostRepository.GetPostsListAsync();
 			if (posts == null || !posts.Any())
-				return new ServiceResponse<List<Post>>() { Entities = null, Success = false, Message = "No posts found!" };
+			{
+				posts = new List<Post>();
+				return new ServiceResponse<List<Post>>() { Entities = posts, Success = true, Message = "No posts found!" };
+			}
 
 			return new ServiceResponse<List<Post>>() { Entities = posts, Success = true, Message = "Posts found" };
 		}
@@ -99,7 +103,7 @@ namespace Plant_Problems.Service.Implementations
 		public ServiceResponse<IEnumerable<Post>> SearchPosts(string content)
 		{
 			var posts = _unitOfWork.PostRepository.Search(content);
-			if (posts == null)
+			if (posts.IsNullOrEmpty())
 				return new ServiceResponse<IEnumerable<Post>>
 				{
 					Entities = null,

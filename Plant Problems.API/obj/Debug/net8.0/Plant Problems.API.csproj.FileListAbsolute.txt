@@ -158,3 +158,4 @@ E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\refint\Plant Pr
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.genruntimeconfig.cache
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\ref\Plant Problems.API.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.sourcelink.json

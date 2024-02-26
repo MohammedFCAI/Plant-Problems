@@ -15,3 +15,4 @@ E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Debug\net8.0\refint\Plan
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Debug\net8.0\Plant Problems.Service.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Debug\net8.0\ref\Plant Problems.Service.dll
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Debug\net8.0\Plant Pr.95B19EDD.Up2Date
+E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Debug\net8.0\Plant Problems.Service.sourcelink.json

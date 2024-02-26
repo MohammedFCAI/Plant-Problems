@@ -198,10 +198,9 @@ namespace Plant_Problems.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("RefreshToken")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("RefreshTokenExpire")
+                    b.Property<DateTime?>("RefreshTokenExpire")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")

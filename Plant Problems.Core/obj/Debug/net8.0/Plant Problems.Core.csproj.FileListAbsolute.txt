@@ -17,3 +17,4 @@ E:\Testing\C#\Plant Problems\Plant Problems.Core\obj\Debug\net8.0\refint\Plant P
 E:\Testing\C#\Plant Problems\Plant Problems.Core\obj\Debug\net8.0\Plant Problems.Core.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.Core\obj\Debug\net8.0\ref\Plant Problems.Core.dll
 E:\Testing\C#\Plant Problems\Plant Problems.Core\obj\Debug\net8.0\Plant Pr.CA928D5E.Up2Date
+E:\Testing\C#\Plant Problems\Plant Problems.Core\obj\Debug\net8.0\Plant Problems.Core.sourcelink.json
