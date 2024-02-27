@@ -258,6 +258,38 @@ namespace Plant_Problems.Infrastructure.Migrations
                     b.ToTable("Comments");
                 });
 
+            modelBuilder.Entity("Plant_Problems.Data.Models.ImagePredication", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("Image")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Prdication")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ImagePredications");
+                });
+
             modelBuilder.Entity("Plant_Problems.Data.Models.Post", b =>
                 {
                     b.Property<Guid>("ID")
@@ -383,6 +415,17 @@ namespace Plant_Problems.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Plant_Problems.Data.Models.ImagePredication", b =>
+                {
+                    b.HasOne("Plant_Problems.Data.Models.ApplicationUser", "User")
+                        .WithMany("ImagePredications")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Plant_Problems.Data.Models.Post", b =>
                 {
                     b.HasOne("Plant_Problems.Data.Models.ApplicationUser", "User")
@@ -416,6 +459,8 @@ namespace Plant_Problems.Infrastructure.Migrations
             modelBuilder.Entity("Plant_Problems.Data.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("ImagePredications");
 
                     b.Navigation("Posts");
                 });

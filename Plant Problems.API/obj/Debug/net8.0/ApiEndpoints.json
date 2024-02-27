@@ -293,6 +293,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Plant_Problems.API.Controllers.ImagesController",
+    "Method": "UploadImage",
+    "RelativePath": "api/images",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Plant_Problems.API.Controllers.PostsController",
     "Method": "GetAllPosts",
     "RelativePath": "api/posts",

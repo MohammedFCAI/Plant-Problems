@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Features\ImagePredications\Queries\Requests\" />
     <Folder Include="Features\Posts\Commands\Responses\" />
     <Folder Include="Features\Posts\Commands\Validations\" />
     <Folder Include="Features\Posts\Queries\Validations\" />

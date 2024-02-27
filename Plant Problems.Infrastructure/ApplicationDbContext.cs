@@ -21,7 +21,7 @@ namespace Plant_Problems.Infrastructure
 		public DbSet<Comment> Comments { get; set; }
 		public DbSet<ApplicationUser> Users { get; set; }
 		public DbSet<SavedPost> SavedPosts { get; set; }
-
+		public DbSet<ImagePredication> ImagePredications { get; set; }
 		private static void SeedRoles(ModelBuilder modelBuilder)
 		{
 			modelBuilder.Entity<IdentityRole>().HasData

@@ -8,12 +8,14 @@ namespace Plant_Problems.Infrastructure.Repositories
 		public ICommentRepository CommentRepository { get; set; }
 		public IUserRepository UserRepository { get; set; }
 		public ISavedPostRepository SavedPostRepository { get; }
-		public UnitOfWork(IPostRepository postRepository, ICommentRepository commentRepository, IUserRepository userRepository, ISavedPostRepository savedPostRepository)
+		public IImagePredicationRepositry ImagePredicationRepositry { get; }
+		public UnitOfWork(IPostRepository postRepository, ICommentRepository commentRepository, IUserRepository userRepository, ISavedPostRepository savedPostRepository, IImagePredicationRepositry imagePredicationRepositry)
 		{
 			PostRepository = postRepository;
 			CommentRepository = commentRepository;
 			UserRepository = userRepository;
 			SavedPostRepository = savedPostRepository;
+			ImagePredicationRepositry = imagePredicationRepositry;
 		}
 	}
 }

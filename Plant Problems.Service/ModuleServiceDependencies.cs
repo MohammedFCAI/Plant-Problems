@@ -15,6 +15,7 @@ namespace Plant_Problems.Service
 			services.AddTransient<IUserService, UserService>();
 			services.AddTransient<IUserRoleService, UserRoleService>();
 			services.AddTransient<IEmailService, EmailService>();
+			services.AddTransient<IImagePredicationService, ImagePredicationService>();
 			services.AddLogging();
 
 			return services;

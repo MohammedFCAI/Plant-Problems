@@ -96,8 +96,6 @@ namespace Plant_Problems.Service.Implementations
 		}
 
 
-
-
 		public async Task<ServiceResponse<Post>> DeletePost(Guid postId)
 		{
 			var post = await _unitOfWork.PostRepository.GetByIdAsync(postId, i => i.Include(c => c.User));

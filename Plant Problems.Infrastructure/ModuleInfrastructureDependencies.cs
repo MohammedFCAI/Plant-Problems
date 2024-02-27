@@ -14,6 +14,7 @@ namespace Plant_Problems.Infrastructure
 			service.AddTransient<IUnitOfWork, UnitOfWork>();
 			service.AddTransient<IUserRepository, UserRepository>();
 			service.AddTransient<ISavedPostRepository, SavedPostRepository>();
+			service.AddTransient<IImagePredicationRepositry, ImagePredicationRepository>();
 			service.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 			return service;
 		}

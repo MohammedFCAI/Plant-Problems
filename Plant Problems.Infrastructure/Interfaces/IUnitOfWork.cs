@@ -6,5 +6,6 @@
 		ICommentRepository CommentRepository { get; }
 		IUserRepository UserRepository { get; }
 		ISavedPostRepository SavedPostRepository { get; }
+		IImagePredicationRepositry ImagePredicationRepositry { get; }
 	}
 }

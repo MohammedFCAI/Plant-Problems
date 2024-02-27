@@ -13,6 +13,10 @@ namespace Plant_Problems.Data.Models
 		[JsonIgnore]
 		public List<Comment> Comments { get; set; }
 
+		// 1 to M ==> ImagePredication
+		[JsonIgnore]
+		public List<ImagePredication> ImagePredications { get; set; }
+
 		public string? RefreshToken { get; set; }
 		public DateTime? RefreshTokenExpire { get; set; }
 	}
