@@ -5,6 +5,7 @@ using Plant_Problems.Service.Authentications.Interfaces;
 namespace Plant_Problems.Core.Features.ImagePredications.Commands.Handlers
 {
 	public class ImagePredicationsHandlerCommand : ResponseHandler, IRequestHandler<AddImagePredicationRequestCommand, Response<ImagePredication>>
+		, IRequestHandler<DeleteAllImagePredicationsRequestCommand, Response<string>>
 	{
 
 		private readonly IImagePredicationService _imageService;
@@ -32,11 +33,6 @@ namespace Plant_Problems.Core.Features.ImagePredications.Commands.Handlers
 
 			var imageMapping = _mapper.Map<ImagePredication>(request);
 
-			//if (!_allowedExtensions.Contains(Path.GetExtension(request.Image.FileName).ToLower()))
-			//	return BadRequest<ImagePredication>("Only .png, .jpg, and .jpeg are allowed!");
-
-			//else if (request.Image.Length > _maxAllowedImageSize)
-			//	return BadRequest<ImagePredication>("Max allowed length for the image is 5MB!");
 
 			// Map request with Image.
 			using var dataStream = new MemoryStream();
@@ -60,6 +56,14 @@ namespace Plant_Problems.Core.Features.ImagePredications.Commands.Handlers
 			return Success(iamge, imageResponse.Message, 1);
 		}
 
+		public async Task<Response<string>> Handle(DeleteAllImagePredicationsRequestCommand request, CancellationToken cancellationToken)
+		{
+			var imageResponse = await _imageService.DeleteImagePrdications(request.UserId);
 
+			if (!imageResponse.Success)
+				return BadRequest<string>(imageResponse.Message);
+
+			return Deleted<string>(imageResponse.Message);
+		}
 	}
 }

@@ -194,6 +194,11 @@ namespace Plant_Problems.Service.Implementations
 			if (user == null)
 				return new ServiceResponse<Post>() { Entities = null, Success = false, Message = "User not found!" };
 
+			var isSavedBefore = await _unitOfWork.SavedPostRepository.IsSaved(post, user);
+
+			if (!isSavedBefore)
+				return new ServiceResponse<Post>() { Entities = null, Success = false, Message = "Post alrady saved before." };
+
 			await _unitOfWork.SavedPostRepository.SavePostAsync(post, user);
 			return new ServiceResponse<Post>() { Entities = null, Success = true, Message = "Post saved." };
 		}
@@ -223,6 +228,10 @@ namespace Plant_Problems.Service.Implementations
 			var user = await _unitOfWork.UserRepository.GetByIdAsync(userId);
 			if (user == null)
 				return new ServiceResponse<Post>() { Entities = null, Success = false, Message = "User not found!" };
+
+			var isNotSavedBefore = !await _unitOfWork.SavedPostRepository.IsSaved(post, user);
+			if (!isNotSavedBefore)
+				return new ServiceResponse<Post>() { Entities = null, Success = false, Message = "No Posts Saved." };
 
 			await _unitOfWork.SavedPostRepository.UnsavePostAsync(post.ID, user.Id);
 			return new ServiceResponse<Post>() { Entities = null, Success = true, Message = "Post Unsaved." };

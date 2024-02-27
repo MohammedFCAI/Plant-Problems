@@ -13,5 +13,6 @@ namespace Plant_Problems.Infrastructure.Interfaces
 		IEnumerable<Post> Search(string content);
 		void UpdatAsync(Post entity);
 		public void Detach(Post post);
+
 	}
 }

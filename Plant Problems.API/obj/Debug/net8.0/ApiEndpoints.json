@@ -314,6 +314,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Plant_Problems.API.Controllers.ImagesController",
+    "Method": "GetArchivedByUseId",
+    "RelativePath": "api/images/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Plant_Problems.API.Controllers.ImagesController",
+    "Method": "DeleteAllArchivedPredicationsByUseId",
+    "RelativePath": "api/images/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Plant_Problems.API.Controllers.PostsController",
     "Method": "GetAllPosts",
     "RelativePath": "api/posts",
@@ -414,43 +446,6 @@
   },
   {
     "ContainingType": "Plant_Problems.API.Controllers.PostsController",
-    "Method": "SavePost",
-    "RelativePath": "api/posts/save-post",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "PostId",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Plant_Problems.API.Controllers.PostsController",
-    "Method": "SavePost",
-    "RelativePath": "api/posts/saved-posts/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Plant_Problems.API.Controllers.PostsController",
     "Method": "Search",
     "RelativePath": "api/posts/search/{content}",
     "HttpMethod": "GET",
@@ -467,8 +462,40 @@
   },
   {
     "ContainingType": "Plant_Problems.API.Controllers.PostsController",
-    "Method": "UnSavePost",
-    "RelativePath": "api/posts/unsave-post",
+    "Method": "GetPostsByUserId",
+    "RelativePath": "api/posts/users/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Plant_Problems.API.Controllers.SavedPostsController",
+    "Method": "SavePost",
+    "RelativePath": "api/savedPosts/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Plant_Problems.API.Controllers.SavedPostsController",
+    "Method": "SavePost",
+    "RelativePath": "api/savedPosts/save",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -487,17 +514,22 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Plant_Problems.API.Controllers.PostsController",
-    "Method": "GetPostsByUserId",
-    "RelativePath": "api/posts/users/{userId}",
-    "HttpMethod": "GET",
+    "ContainingType": "Plant_Problems.API.Controllers.SavedPostsController",
+    "Method": "UnSavePost",
+    "RelativePath": "api/savedPosts/unsave",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "PostId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

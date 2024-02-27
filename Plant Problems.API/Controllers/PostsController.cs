@@ -66,27 +66,27 @@ namespace Plant_Problems.API.Controllers
 			return NewResult(response);
 		}
 
-		[HttpPost("save-post")]
-		public async Task<IActionResult> SavePost([FromForm] SavePostRequestCommand request)
-		{
-			var response = await _mediator.Send(request);
-			return NewResult(response);
-		}
+		//[HttpPost("save-post")]
+		//public async Task<IActionResult> SavePost([FromForm] SavePostRequestCommand request)
+		//{
+		//	var response = await _mediator.Send(request);
+		//	return NewResult(response);
+		//}
 
 
-		[HttpPost("unsave-post")]
-		public async Task<IActionResult> UnSavePost([FromForm] UnSavePostRequestCommand request)
-		{
-			var response = await _mediator.Send(request);
-			return NewResult(response);
-		}
+		//[HttpPost("unsave-post")]
+		//public async Task<IActionResult> UnSavePost([FromForm] UnSavePostRequestCommand request)
+		//{
+		//	var response = await _mediator.Send(request);
+		//	return NewResult(response);
+		//}
 
 
-		[HttpGet("saved-posts/{userId}")]
-		public async Task<IActionResult> SavePost(string userId)
-		{
-			var response = await _mediator.Send(new GetSavedPostsRequestQuery(userId));
-			return NewResult(response);
-		}
+		//[HttpGet("saved-posts/{userId}")]
+		//public async Task<IActionResult> SavePost(string userId)
+		//{
+		//	var response = await _mediator.Send(new GetSavedPostsRequestQuery(userId));
+		//	return NewResult(response);
+		//}
 	}
 }

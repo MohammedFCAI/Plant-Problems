@@ -51,6 +51,9 @@ namespace Plant_Problems.Service.Implementations
 			if (imagesPredications.IsNullOrEmpty())
 				return new ServiceResponse<List<ImagePredication>>() { Entities = null, Success = false, Message = "Imags empty!" };
 
+			foreach (var imagePredication in imagesPredications)
+				await DeleteImage(imagePredication.ImageUrl, _hostEnvironment);
+
 			await _unitOfWork.ImagePredicationRepositry.DeleteImagesAsync(imagesPredications);
 			return new ServiceResponse<List<ImagePredication>>() { Entities = imagesPredications, Success = true, Message = "Images deleted" };
 
@@ -65,7 +68,10 @@ namespace Plant_Problems.Service.Implementations
 			var imagesPredications = await _unitOfWork.ImagePredicationRepositry.GetImagePredicationsByUserIdAsync(userId);
 
 			if (imagesPredications.IsNullOrEmpty())
-				return new ServiceResponse<List<ImagePredication>>() { Entities = null, Success = false, Message = "Imags empty!" };
+			{
+				imagesPredications = new List<ImagePredication>();
+				return new ServiceResponse<List<ImagePredication>>() { Entities = imagesPredications, Success = true, Message = "Imags empty!" };
+			}
 
 			return new ServiceResponse<List<ImagePredication>>() { Entities = imagesPredications, Success = true, Message = "Images found" };
 		}

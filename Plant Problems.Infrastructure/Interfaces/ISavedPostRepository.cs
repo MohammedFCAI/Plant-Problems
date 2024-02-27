@@ -9,5 +9,6 @@ namespace Plant_Problems.Infrastructure.Interfaces
 		Task<List<Post>> GetSavedPostsAsync(string userId);
 		Task<bool> UnsavePostAsync(Guid postId, string userId);
 		Task DeleteRangeAsync(ICollection<Post> entities);
+		public Task<bool> IsSaved(Post post, ApplicationUser user);
 	}
 }

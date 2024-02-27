@@ -64,5 +64,15 @@ namespace Plant_Problems.Infrastructure.Repositories
 			}
 			await _context.SaveChangesAsync();
 		}
+
+		public async Task<bool> IsSaved(Post post, ApplicationUser user)
+		{
+			var savedPost = await _context.SavedPosts
+				.FirstOrDefaultAsync(sp => sp.PostId == post.ID && sp.UserId == user.Id);
+
+			if (savedPost != null)
+				return false;
+			return true;
+		}
 	}
 }

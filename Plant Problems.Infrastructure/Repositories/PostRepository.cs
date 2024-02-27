@@ -67,6 +67,5 @@ namespace Plant_Problems.Infrastructure.Repositories
 
 			return posts;
 		}
-
 	}
 }

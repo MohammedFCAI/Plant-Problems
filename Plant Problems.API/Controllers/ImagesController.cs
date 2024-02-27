@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Plant_Problems.API.Bases;
 using Plant_Problems.Core.Features.ImagePredications.Commands.Requests;
+using Plant_Problems.Core.Features.ImagePredications.Queries.Requests;
 
 namespace Plant_Problems.API.Controllers
 {
@@ -41,6 +42,24 @@ namespace Plant_Problems.API.Controllers
 
 
 
+		[HttpGet("{userId}")]
+		public async Task<IActionResult> GetArchivedByUseId(string userId)
+		{
+			var response = await _mediator.Send(new GetImeagesPredicationRequestQuery(userId));
+			return NewResult(response);
+		}
+
+
+
+		[HttpDelete("{userId}")]
+		public async Task<IActionResult> DeleteAllArchivedPredicationsByUseId(string userId)
+		{
+			var response = await _mediator.Send(new DeleteAllImagePredicationsRequestCommand(userId));
+			return NewResult(response);
+		}
+
+
+		// Private Methods:
 		private async Task<byte[]> ConvertImageToBytes(IFormFile image)
 		{
 			using (var memoryStream = new MemoryStream())
