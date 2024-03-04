@@ -1,0 +1,9 @@
+﻿global using Microsoft.AspNetCore.Identity;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.OpenApi.Any;
+global using Microsoft.OpenApi.Models;
+global using MimeKit;
+global using Plant_Problems.Data.Helpers;
+global using Swashbuckle.AspNetCore.SwaggerGen;
+global using System.ComponentModel.DataAnnotations;
+global using System.Text.Json.Serialization;

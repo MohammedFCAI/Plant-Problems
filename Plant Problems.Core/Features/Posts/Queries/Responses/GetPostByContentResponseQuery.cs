@@ -1,8 +1,7 @@
-﻿using Plant_Problems.Data.Models;
-
-namespace Plant_Problems.Core.Features.Posts.Queries.Responses
+﻿namespace Plant_Problems.Core.Features.Posts.Queries.Responses
 {
-	public class GetPostByContentResponseQuery : Post
-	{
-	}
+    public class GetPostByContentResponseQuery : BaseResponse
+    {
+
+    }
 }

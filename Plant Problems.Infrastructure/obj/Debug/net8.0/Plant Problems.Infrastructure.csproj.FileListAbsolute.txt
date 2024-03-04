@@ -9,10 +9,10 @@ E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plan
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.AssemblyInfoInputs.cache
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.AssemblyInfo.cs
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.sourcelink.json
+E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Pr.9086D8FA.Up2Date
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.dll
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\refint\Plant Problems.Infrastructure.dll
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.genruntimeconfig.cache
 E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\ref\Plant Problems.Infrastructure.dll
-E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Pr.9086D8FA.Up2Date
-E:\Testing\C#\Plant Problems\Plant Problems.Infrastructure\obj\Debug\net8.0\Plant Problems.Infrastructure.sourcelink.json

@@ -1,16 +1,13 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
-
-namespace Plant_Problems.Core
+﻿namespace Plant_Problems.Core
 {
-	public static class ModuleCoreDependencies
-	{
-		public static IServiceCollection AddCoreDependencies(this IServiceCollection services)
-		{
-			services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+    public static class ModuleCoreDependencies
+    {
+        public static IServiceCollection AddCoreDependencies(this IServiceCollection services)
+        {
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
-			services.AddAutoMapper(Assembly.GetExecutingAssembly());
-			return services;
-		}
-	}
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            return services;
+        }
+    }
 }

@@ -1,40 +1,37 @@
-﻿using Plant_Problems.Core.Features.Authentications.Requests;
-using Plant_Problems.Data.Models.Authentications;
-
-namespace Plant_Problems.Core.Mappings.Authentications
+﻿namespace Plant_Problems.Core.Mappings.Authentications
 {
-	public class AuthenticationProfile : Profile
-	{
-		public AuthenticationProfile()
-		{
-			RegisterUserMapping();
-			LoginUserMapping();
-			AssignRoleMapping();
-			ChangePasswordMapping();
-		}
+    public class AuthenticationProfile : Profile
+    {
+        public AuthenticationProfile()
+        {
+            RegisterUserMapping();
+            LoginUserMapping();
+            AssignRoleMapping();
+            ChangePasswordMapping();
+        }
 
-		private void RegisterUserMapping()
-		{
-			CreateMap<RegisterRequest, Register>();
+        private void RegisterUserMapping()
+        {
+            CreateMap<RegisterRequest, Register>();
 
 
 
-			CreateMap<RegisterRequest, ApplicationUser>().ReverseMap();
-		}
+            CreateMap<RegisterRequest, ApplicationUser>().ReverseMap();
+        }
 
-		private void LoginUserMapping()
-		{
-			CreateMap<LoginRequest, Login>().ReverseMap();
-		}
+        private void LoginUserMapping()
+        {
+            CreateMap<LoginRequest, Login>().ReverseMap();
+        }
 
-		private void AssignRoleMapping()
-		{
-			CreateMap<UserRoleRequest, UserRole>().ReverseMap();
-		}
+        private void AssignRoleMapping()
+        {
+            CreateMap<UserRoleRequest, UserRole>().ReverseMap();
+        }
 
-		private void ChangePasswordMapping()
-		{
-			CreateMap<ChangeUserPasswordRequest, ApplicationUser>().ReverseMap();
-		}
-	}
+        private void ChangePasswordMapping()
+        {
+            CreateMap<ChangeUserPasswordRequest, ApplicationUser>().ReverseMap();
+        }
+    }
 }

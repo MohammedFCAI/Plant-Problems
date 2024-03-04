@@ -1,69 +1,65 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Plant_Problems.Core.Features.ImagePredications.Commands.Requests;
-using Plant_Problems.Service.Authentications.Interfaces;
-
-namespace Plant_Problems.Core.Features.ImagePredications.Commands.Handlers
+﻿namespace Plant_Problems.Core.Features.ImagePredications.Commands.Handlers
 {
-	public class ImagePredicationsHandlerCommand : ResponseHandler, IRequestHandler<AddImagePredicationRequestCommand, Response<ImagePredication>>
-		, IRequestHandler<DeleteAllImagePredicationsRequestCommand, Response<string>>
-	{
+    public class ImagePredicationsHandlerCommand : ResponseHandler, IRequestHandler<AddImagePredicationRequestCommand, Response<string>>
+        , IRequestHandler<DeleteAllImagePredicationsRequestCommand, Response<string>>
+    {
 
-		private readonly IImagePredicationService _imageService;
-		private readonly IMapper _mapper;
-		private readonly IUserService _userService;
-		private new List<string> _allowedExtensions = new List<string>() { ".jpg", ".png", ".jpeg" };
-		private long _maxAllowedImageSize = 5000000;
-		private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IImagePredicationService _imageService;
+        private readonly IMapper _mapper;
+        private readonly IUserService _userService;
+        private new List<string> _allowedExtensions = new List<string>() { ".jpg", ".png", ".jpeg" };
+        private long _maxAllowedImageSize = 5000000;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-		public ImagePredicationsHandlerCommand(IImagePredicationService imageService, IMapper mapper, UserManager<ApplicationUser> userManager, IUserService userService)
-		{
-			_imageService = imageService;
-			_mapper = mapper;
-			_userManager = userManager;
-			_userService = userService;
-		}
+        public ImagePredicationsHandlerCommand(IImagePredicationService imageService, IMapper mapper, UserManager<ApplicationUser> userManager, IUserService userService)
+        {
+            _imageService = imageService;
+            _mapper = mapper;
+            _userManager = userManager;
+            _userService = userService;
+        }
 
-		public async Task<Response<ImagePredication>> Handle(AddImagePredicationRequestCommand request, CancellationToken cancellationToken)
-		{
-			var userResponse = await _userService.GetUserById(request.UserId);
-			if (!userResponse.Success)
-				return BadRequest<ImagePredication>(userResponse.Message);
-			var user = userResponse.Entities;
-
-
-			var imageMapping = _mapper.Map<ImagePredication>(request);
+        public async Task<Response<string>> Handle(AddImagePredicationRequestCommand request, CancellationToken cancellationToken)
+        {
+            var userResponse = await _userService.GetUserById(request.UserId);
+            if (!userResponse.Success)
+                return BadRequest<string>(userResponse.Message);
+            var user = userResponse.Entities;
 
 
-			// Map request with Image.
-			using var dataStream = new MemoryStream();
-			await request.Image.CopyToAsync(dataStream);
+            var imageMapping = _mapper.Map<ImagePredication>(request);
 
 
-			imageMapping.Image = dataStream.ToArray();
+            // Map request with Image.
+            using var dataStream = new MemoryStream();
+            await request.Image.CopyToAsync(dataStream);
 
-			_userService.Detach(imageMapping.User);
 
-			imageMapping.User = user;
-			imageMapping.UserId = request.UserId;
+            imageMapping.Image = dataStream.ToArray();
 
-			var imageResponse = await _imageService.AddImage(imageMapping);
+            _userService.Detach(imageMapping.User);
 
-			if (!imageResponse.Success)
-				return BadRequest<ImagePredication>(imageResponse.Message);
+            imageMapping.User = user;
+            imageMapping.UserId = request.UserId;
 
-			var iamge = imageResponse.Entities;
+            var imageResponse = await _imageService.AddImage(imageMapping);
 
-			return Success(iamge, imageResponse.Message, 1);
-		}
+            if (!imageResponse.Success)
+                return BadRequest<string>(imageResponse.Message);
 
-		public async Task<Response<string>> Handle(DeleteAllImagePredicationsRequestCommand request, CancellationToken cancellationToken)
-		{
-			var imageResponse = await _imageService.DeleteImagePrdications(request.UserId);
+            var iamge = imageResponse.Entities;
 
-			if (!imageResponse.Success)
-				return BadRequest<string>(imageResponse.Message);
+            return Success(iamge.Prdication, imageResponse.Message, 1);
+        }
 
-			return Deleted<string>(imageResponse.Message);
-		}
-	}
+        public async Task<Response<string>> Handle(DeleteAllImagePredicationsRequestCommand request, CancellationToken cancellationToken)
+        {
+            var imageResponse = await _imageService.DeleteImagePrdications(request.UserId);
+
+            if (!imageResponse.Success)
+                return BadRequest<string>(imageResponse.Message);
+
+            return Deleted<string>(imageResponse.Message);
+        }
+    }
 }

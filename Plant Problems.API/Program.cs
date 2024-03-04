@@ -1,9 +1,3 @@
-using Plant_Problems.API.EmailService;
-using Plant_Problems.Core;
-using Plant_Problems.Data;
-using Plant_Problems.Infrastructure;
-using Plant_Problems.Service;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Dependencies.
@@ -22,8 +16,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-	app.UseSwagger();
-	app.UseSwaggerUI();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

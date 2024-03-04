@@ -1,10 +1,8 @@
-﻿using Plant_Problems.Data.Models.Configurations;
-
-namespace Plant_Problems.Service.Interfaces
+﻿namespace Plant_Problems.Service.Interfaces
 {
-	public interface IEmailService
-	{
-		Task<ServiceResponse<string>> SendEmailAsync(Message message);
-		Task<ServiceResponse<string>> ConfirmEmail(string token, string email);
-	}
+    public interface IEmailService
+    {
+        Task<ServiceResponse<string>> SendEmailAsync(Message message);
+        Task<ServiceResponse<string>> ConfirmEmail(string token, string email);
+    }
 }

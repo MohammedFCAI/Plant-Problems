@@ -1,12 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Plant_Problems.Data.Models.Authentications
+﻿namespace Plant_Problems.Data.Models.Authentications
 {
-	public enum Role
-	{
-		[Display(Name = "Admin")]
-		Admin,
-		[Display(Name = "User")]
-		User
-	}
+    public enum Role
+    {
+        [Display(Name = "Admin")]
+        Admin,
+        [Display(Name = "User")]
+        User
+    }
 }

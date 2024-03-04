@@ -121,27 +121,6 @@
   },
   {
     "ContainingType": "Plant_Problems.API.Controllers.AuthenticationsController",
-    "Method": "LoginWithJwt",
-    "RelativePath": "api/auth/login-with-jwt",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Plant_Problems.API.Controllers.AuthenticationsController",
     "Method": "RefreshToken",
     "RelativePath": "api/auth/refresh-token",
     "HttpMethod": "POST",
@@ -188,32 +167,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Plant_Problems.API.Controllers.AuthenticationsController",
-    "Method": "SendEmail",
-    "RelativePath": "api/auth/sendEmail",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "To",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Subject",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Content",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Plant_Problems.API.Controllers.CommentsController",
     "Method": "AddComment",
     "RelativePath": "api/comments",
@@ -248,9 +201,19 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "Plant_Problems.Core.Features.Comments.Commands.Requests.UpdateCommentRequestCommand",
-        "IsRequired": true
+        "Name": "CommentId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "PostId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -479,7 +442,7 @@
   {
     "ContainingType": "Plant_Problems.API.Controllers.SavedPostsController",
     "Method": "SavePost",
-    "RelativePath": "api/savedPosts/{userId}",
+    "RelativePath": "api/saved-posts/{userId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -495,7 +458,7 @@
   {
     "ContainingType": "Plant_Problems.API.Controllers.SavedPostsController",
     "Method": "SavePost",
-    "RelativePath": "api/savedPosts/save",
+    "RelativePath": "api/saved-posts/save",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -516,7 +479,7 @@
   {
     "ContainingType": "Plant_Problems.API.Controllers.SavedPostsController",
     "Method": "UnSavePost",
-    "RelativePath": "api/savedPosts/unsave",
+    "RelativePath": "api/saved-posts/unsave",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -546,25 +509,30 @@
   },
   {
     "ContainingType": "Plant_Problems.API.Controllers.UsersController",
-    "Method": "GetAllUsers",
-    "RelativePath": "api/users/{id}",
-    "HttpMethod": "GET",
+    "Method": "DeleteUser",
+    "RelativePath": "api/users",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "UserId",
         "Type": "System.String",
-        "IsRequired": true
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "Plant_Problems.API.Controllers.UsersController",
-    "Method": "DeleteUser",
+    "Method": "GetAllUsers",
     "RelativePath": "api/users/{id}",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
