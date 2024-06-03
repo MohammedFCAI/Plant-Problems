@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g0ehDq63Bs4RZ043YBO+r+aAf7aeZfaDlmXcIBVT+ZlNJy3sj3ocij7segimwL6IcCrZ2SkoPC5uFFwbGyOEYg==",
+  "dgSpecHash": "1daZHVWabyiyikKFbRwnbWP1ivc3wZOF25RVJtkKc75sIrVzURnfckBj8YpmY/FT2wWsw0JuJRZo7JXHCCc0+A==",
   "success": true,
   "projectFilePath": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.API\\Plant Problems.API.csproj",
   "expectedPackageFiles": [
@@ -97,6 +97,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.hosting\\8.0.0\\microsoft.extensions.hosting.8.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.0\\microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.http\\8.0.0\\microsoft.extensions.http.8.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.2\\microsoft.extensions.identity.core.8.0.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.2\\microsoft.extensions.identity.stores.8.0.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.localization\\2.2.0\\microsoft.extensions.localization.2.2.0.nupkg.sha512",

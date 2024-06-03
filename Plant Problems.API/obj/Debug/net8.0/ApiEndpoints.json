@@ -257,27 +257,6 @@
   },
   {
     "ContainingType": "Plant_Problems.API.Controllers.ImagesController",
-    "Method": "UploadImage",
-    "RelativePath": "api/images",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "UserId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Plant_Problems.API.Controllers.ImagesController",
     "Method": "GetArchivedByUseId",
     "RelativePath": "api/images/{userId}",
     "HttpMethod": "GET",
@@ -304,6 +283,27 @@
         "Name": "userId",
         "Type": "System.String",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Plant_Problems.API.Controllers.ImagesController",
+    "Method": "Predict",
+    "RelativePath": "api/images/predict",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
