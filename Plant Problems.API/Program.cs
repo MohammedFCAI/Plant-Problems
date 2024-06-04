@@ -32,6 +32,7 @@ app.UseCors(c => c.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localho
 
 app.UseAuthorization();
 
+app.UseStaticFiles();
 
 app.MapControllers();
 

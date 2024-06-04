@@ -2,7 +2,7 @@
 {
     [Route("api/posts")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class PostsController : AppControllerBase
     {
         private readonly IMediator _mediator;

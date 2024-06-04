@@ -1,3 +1,16 @@
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.csproj.AssemblyReference.cache
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.AssemblyInfoInputs.cache
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.AssemblyInfo.cs
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.csproj.CoreCompileInputs.cache
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.MvcApplicationPartsAssemblyInfo.cs
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.MvcApplicationPartsAssemblyInfo.cache
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.RazorAssemblyInfo.cache
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.RazorAssemblyInfo.cs
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.sourcelink.json
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\refint\Plant Problems.API.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Debug\net8.0\appsettings.Development.json
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Debug\net8.0\appsettings.json
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Debug\net8.0\Plant Problems.API.exe
@@ -143,19 +156,6 @@ E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Debug\net8.0\Plant Problems.
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Debug\net8.0\Plant Problems.Infrastructure.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Debug\net8.0\Plant Problems.Service.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Debug\net8.0\Plant Problems.Data.pdb
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.csproj.AssemblyReference.cache
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.GeneratedMSBuildEditorConfig.editorconfig
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.AssemblyInfoInputs.cache
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.AssemblyInfo.cs
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.csproj.CoreCompileInputs.cache
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.MvcApplicationPartsAssemblyInfo.cs
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.MvcApplicationPartsAssemblyInfo.cache
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.RazorAssemblyInfo.cache
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.RazorAssemblyInfo.cs
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.sourcelink.json
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Pr.21D0CDFE.Up2Date
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.dll
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\refint\Plant Problems.API.dll
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.pdb
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\Plant Problems.API.genruntimeconfig.cache
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Debug\net8.0\ref\Plant Problems.API.dll

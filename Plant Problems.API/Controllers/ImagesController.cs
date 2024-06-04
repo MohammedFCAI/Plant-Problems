@@ -36,20 +36,21 @@ namespace Plant_Problems.API.Controllers
             using (var content = new ByteArrayContent(imageArrayOfBytes))
             {
                 content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
-                var response = await _httpClient.PostAsync("https://web-production-94b25.up.railway.app/predict", content);
-
-                if (!response.IsSuccessStatusCode)
+                try
                 {
-                    return StatusCode((int)response.StatusCode, response.ReasonPhrase);
+                    var response = await _httpClient.PostAsync("https://web-production-94b25.up.railway.app/predict", content);
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    var jsonResponse = JObject.Parse(responseString);
+                    var className = jsonResponse.GetValue("class_name")?.ToString();
+
+                    var imageHandler = new AddImagePredicationRequestCommand() { Image = request.Image, UserId = request.UserId, Response = className };
+                    var res = await _mediator.Send(imageHandler);
+                    return NewResult(res);
                 }
-
-                var responseString = await response.Content.ReadAsStringAsync();
-                var jsonResponse = JObject.Parse(responseString);
-                var className = jsonResponse.GetValue("class_name")?.ToString();
-
-                var imageHandler = new AddImagePredicationRequestCommand() { Image = request.Image, UserId = request.UserId, Response = className };
-                var res = await _mediator.Send(imageHandler);
-                return NewResult(res);
+                catch (Exception ex)
+                {
+                    return BadRequest(new APIResponse { StatusCode = 503, Status = "Faild", ErrorMessages = "Error!! Plase try agin later!" });
+                }
             }
 
         }

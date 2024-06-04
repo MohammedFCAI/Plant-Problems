@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Testing\\C#\\Plant Problems\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D7B961C8-5444-4BEF-9124-14A98A29AF33}|Plant Problems.API\\Plant Problems.API.csproj|e:\\testing\\c#\\plant problems\\plant problems.api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7B961C8-5444-4BEF-9124-14A98A29AF33}|Plant Problems.API\\Plant Problems.API.csproj|solutionrelative:plant problems.api\\controllers\\imagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E60C92BC-FA9B-432A-9EF6-4F8A2F0182DD}|Plant Problems.Service\\Plant Problems.Service.csproj|e:\\testing\\c#\\plant problems\\plant problems.service\\interfaces\\iimagepredicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E60C92BC-FA9B-432A-9EF6-4F8A2F0182DD}|Plant Problems.Service\\Plant Problems.Service.csproj|solutionrelative:plant problems.service\\interfaces\\iimagepredicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70853DD9-ECCE-430F-BC4E-AAA880E234AB}|Plant Problems.Core\\Plant Problems.Core.csproj|e:\\testing\\c#\\plant problems\\plant problems.core\\features\\imagepredications\\commands\\handlers\\imagepredicationshandlercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70853DD9-ECCE-430F-BC4E-AAA880E234AB}|Plant Problems.Core\\Plant Problems.Core.csproj|solutionrelative:plant problems.core\\features\\imagepredications\\commands\\handlers\\imagepredicationshandlercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,45 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImagePredicationsHandlerCommand.cs",
-              "DocumentMoniker": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Core\\Features\\ImagePredications\\Commands\\Handlers\\ImagePredicationsHandlerCommand.cs",
-              "RelativeDocumentMoniker": "Plant Problems.Core\\Features\\ImagePredications\\Commands\\Handlers\\ImagePredicationsHandlerCommand.cs",
-              "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Core\\Features\\ImagePredications\\Commands\\Handlers\\ImagePredicationsHandlerCommand.cs",
-              "RelativeToolTip": "Plant Problems.Core\\Features\\ImagePredications\\Commands\\Handlers\\ImagePredicationsHandlerCommand.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA2wB0AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T13:47:36.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IImagePredicationService.cs",
-              "DocumentMoniker": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Service\\Interfaces\\IImagePredicationService.cs",
-              "RelativeDocumentMoniker": "Plant Problems.Service\\Interfaces\\IImagePredicationService.cs",
-              "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.Service\\Interfaces\\IImagePredicationService.cs",
-              "RelativeToolTip": "Plant Problems.Service\\Interfaces\\IImagePredicationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T13:44:27.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImagesController.cs",
-              "DocumentMoniker": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.API\\Controllers\\ImagesController.cs",
-              "RelativeDocumentMoniker": "Plant Problems.API\\Controllers\\ImagesController.cs",
-              "ToolTip": "E:\\Testing\\C#\\Plant Problems\\Plant Problems.API\\Controllers\\ImagesController.cs",
-              "RelativeToolTip": "Plant Problems.API\\Controllers\\ImagesController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAIAywB8AAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T13:17:59.368Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -5,12 +5,14 @@
         private readonly IUnitOfWork _unitOfWork;
         private readonly IHostingEnvironment _hostEnvironment;
         private readonly IImageManager _imageManager;
+        private readonly IWebHostEnvironment _environment;
 
-        public ImagePredicationService(IUnitOfWork unitOfWork, IHostingEnvironment hostEnvironment, IImageManager imageManager)
+        public ImagePredicationService(IUnitOfWork unitOfWork, IHostingEnvironment hostEnvironment, IImageManager imageManager, IWebHostEnvironment environment)
         {
             _unitOfWork = unitOfWork;
             _hostEnvironment = hostEnvironment;
             _imageManager = imageManager;
+            _environment = environment;
         }
 
         public async Task<ServiceResponse<ImagePredication>> AddImage(ImagePredication imagePredication)
@@ -51,7 +53,7 @@
                 return new ServiceResponse<List<ImagePredication>>() { Entities = null, Success = false, Message = "Imags empty!" };
 
             foreach (var imagePredication in imagesPredications)
-                await _imageManager.DeleteImage(imagePredication.ImageUrl, _hostEnvironment);
+                await _imageManager.DeleteImage(imagePredication.ImageUrl, _hostEnvironment, "MODEL");
 
 
             await _unitOfWork.ImagePredicationRepositry.DeleteImagesAsync(imagesPredications);

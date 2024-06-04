@@ -9,9 +9,12 @@ E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\AutoMapper.dl
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Azure.Core.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Azure.Identity.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\BouncyCastle.Cryptography.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Humanizer.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\MailKit.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\MediatR.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\MediatR.Contracts.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -45,9 +48,12 @@ E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.Ide
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.OpenApi.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.SqlServer.Server.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\MimeKit.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Mono.TextTemplating.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\NETCore.MailKit.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Newtonsoft.Json.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Newtonsoft.Json.Bson.dll
+E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\NSwag.Annotations.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -146,7 +152,8 @@ E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problem
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problems.API.MvcApplicationPartsAssemblyInfo.cache
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problems.API.RazorAssemblyInfo.cache
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problems.API.RazorAssemblyInfo.cs
-E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problems.API.csproj.CopyComplete
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problems.API.sourcelink.json
+E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Pr.21D0CDFE.Up2Date
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problems.API.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\refint\Plant Problems.API.dll
 E:\Testing\C#\Plant Problems\Plant Problems.API\obj\Release\net8.0\Plant Problems.API.pdb

@@ -3,6 +3,6 @@
     public interface IImageManager
     {
         Task<string> SaveImage(byte[] imageBytes, IHostingEnvironment hostEnvironment, string type);
-        Task DeleteImage(string imageUrl, IHostingEnvironment hostEnvironment);
+        Task DeleteImage(string imageUrl, IHostingEnvironment hostEnvironment, string type);
     }
 }

@@ -58,7 +58,7 @@
             if (post == null)
                 return new ServiceResponse<Post>() { Entities = null, Success = false, Message = "Post Id not found!" };
 
-            await _imageManager.DeleteImage(post.ImageUrl, _hostEnvironment);
+            await _imageManager.DeleteImage(post.ImageUrl, _hostEnvironment, "");
 
             if (entity.Image != null)
             {
@@ -103,7 +103,7 @@
 
             await _unitOfWork.PostRepository.DeleteAsnc(post);
 
-            await _imageManager.DeleteImage(post.ImageUrl, _hostEnvironment);
+            await _imageManager.DeleteImage(post.ImageUrl, _hostEnvironment, "");
             return new ServiceResponse<Post>() { Entities = post, Success = true, Message = "Post Deleted Successfully" };
         }
 

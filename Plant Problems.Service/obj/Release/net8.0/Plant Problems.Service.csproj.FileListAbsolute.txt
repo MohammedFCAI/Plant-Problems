@@ -10,7 +10,8 @@ E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Pro
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Problems.Service.AssemblyInfoInputs.cache
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Problems.Service.AssemblyInfo.cs
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Problems.Service.csproj.CoreCompileInputs.cache
-E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Problems.Service.csproj.CopyComplete
+E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Problems.Service.sourcelink.json
+E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Pr.95B19EDD.Up2Date
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Problems.Service.dll
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\refint\Plant Problems.Service.dll
 E:\Testing\C#\Plant Problems\Plant Problems.Service\obj\Release\net8.0\Plant Problems.Service.pdb
